@@ -1,0 +1,72 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { AppComponent } from './app.component';
+
+import { AfterContentParentComponent } from './after-content-parent.component';
+import { AfterContentComponent } from './after-content.component';
+import { ChildComponent } from './child.component';
+
+import { AfterViewParentComponent } from './after-view-parent.component';
+import { AfterViewComponent } from './after-view.component';
+import { ChildViewComponent } from './child-view.component';
+
+import { CounterParentComponent } from './counter-parent.component';
+import { MyCounterComponent } from './counter.component';
+
+import { DoCheckParentComponent } from './do-check-parent.component';
+import { DoCheckComponent } from './do-check.component';
+
+import { OnChangesParentComponent } from './on-changes-parent.component';
+import { OnChangesComponent } from './on-changes.component';
+
+import { PeekABooParentComponent } from './peek-a-boo-parent.component';
+import { PeekABooComponent } from './peek-a-boo.component';
+
+import { SpyParentComponent } from './spy.component';
+import { SpyDirective } from './spy.directive';
+
+// import { NoEncapsulationComponent } from './no-encapsulation.component';
+// import { ShadowDomEncapsulationComponent } from './shadow-dom-encapsulation.component';
+// import { EmulatedEncapsulationComponent } from './emulated-encapsulation.component';
+
+
+@NgModule({
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
+  declarations: [
+    AppComponent,
+    AfterContentParentComponent,
+    AfterContentComponent,
+    ChildComponent,
+    AfterViewParentComponent,
+    AfterViewComponent,
+    ChildViewComponent,
+    CounterParentComponent,
+    MyCounterComponent,
+    DoCheckParentComponent,
+    DoCheckComponent,
+    OnChangesParentComponent,
+    OnChangesComponent,
+    PeekABooParentComponent,
+    PeekABooComponent,
+    SpyParentComponent,
+    SpyDirective,
+    // NoEncapsulationComponent,
+    // ShadowDomEncapsulationComponent,
+    // EmulatedEncapsulationComponent
+  ],
+  //providers: [],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule { }
+
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
